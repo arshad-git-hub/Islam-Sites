@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Great+Vibes&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    outline: none;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family:'lexend','Ubuntu Condensed','Poppins','Trebuchet MS','sans-serif';
+    box-sizing: border-box;
+}
+:root{
+    --pink: #fd0675;
+    --white: #fff;
+    --grey: #484848;
+    --black: #000000;
+    --black-half: #00000080;
+    --red: #fb6f92;
+    --bg: #252525;
+    --fb-bg: #4267B2;
+    --ig-bg: #fd0675;
+    --in-bg: #0073B1;
+    --tw-bg: #1DA1F2;
+    --light : #f5ebe0;
+}
+body{
+    overflow-x: hidden;
+    /* background-image: url('kaaba.jpg');
+    background-size: cover; */
+    user-select: none;
+}
+p{
+    font-size: 1.4rem;
+}
+
+/* ---------- NAVBAR ---------- */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10rem;
+    font-family: 'lexend','Poppins','Trebuchet MS','sans-serif';
+    background-color: var(--bg);
+    color: var(--white);
+}
+nav .nav-list{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.nav-list a{
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--white);
+    transition: 0.3s;
+}
+.nav-list a:hover{
+    color: var(--ig-bg);
+}
+nav a{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--white);
+    color: rgb(27, 201, 163);
+}
+nav a i{
+    color: rgb(27, 201, 163);
+}
+#hamburger{
+    color: var(--white);
+    font-size: 3.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* ---------- SECTION ---------- */
+
+section{
+    padding: 1rem 10rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--white);
+}
+section:nth-child(1){
+    /* padding-top: 3rem; */
+}
+section:nth-child(5){
+    /* padding-bottom: 3rem; */
+}
+
+/* ================ ALL CONTAINER ================ */
+
+.container{
+    flex-wrap: wrap;
+}
+.container .box{
+    color: var(--white);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 10rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.1s;
+    border: 0.2rem solid transparent;
+}
+.container h1{
+    position: relative;
+    font-size: 1.6rem;
+    width: 100%;
+    font-weight: 600;
+}
+.container p{
+    font-size: 1.5rem;
+    color: var(--grey);
+}
+/* .container h1:after{
+    content: "";
+    position: absolute;
+    border-top: 0.2rem solid red;
+    width: 10%;
+    top: 1rem;
+    left: 20rem
+} */
+.container .box:nth-child(1), .container .box:nth-child(6), .container .box:nth-child(11), .container .box:nth-child(16){
+    background-color: #c77dff;
+}
+.container .box:nth-child(2), .container .box:nth-child(7), .container .box:nth-child(12), .container .box:nth-child(17){
+    background-color: #62b6cb;
+}
+.container .box:nth-child(3), .container .box:nth-child(8), .container .box:nth-child(13), .container .box:nth-child(18){
+    background-color: #dda15e;
+}
+.container .box:nth-child(4), .container .box:nth-child(9), .container .box:nth-child(14){
+    background-color: rgb(90, 188, 120);
+}
+.container .box:nth-child(5), .container .box:nth-child(10), .container .box:nth-child(15){
+    background-color: #ff89a6;
+}
+#surah .box{
+    flex: 1 1 25rem;
+}
+#sahaba .box{
+    flex: 1 1 15rem;
+}
+#battles .box{
+    flex: 1 1 20rem;
+}
+
+/* ========================= ALL H1 ========================= */
+
+.shahadat h1, .namaz h1, .ramadan h1, .hajj h1, .zakaat h1, .surah h2, .sahaba h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--white);
+    background-color: #d4a547;
+    width: 100%;
+    border-radius: 5rem;    
+    margin-bottom: 1rem;
+}
+
+.sahaba{
+    padding: 3rem 10rem;
+}
+.jung{
+    padding: 3rem 10rem;
+}
+
+/* ========================= PILLARs ========================= */
+
+#pillars{
+    padding-top: 2rem;
+}
+.pillars{
+    flex-direction: column;
+    padding: 3rem 10rem;
+}
+
+/* ========================== SURAH ========================== */
+
+.surah{
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    gap: 0;
+}
+.surah h2{
+    width: 47%;
+}
+.surah img{
+    width: 50%;
+}
+
+/* SURAH AL-FATIHA -------------- */
+
+/* SURAH AL-KAHF ---------------- */
+
+/* SURAH AL-MULK ---------------- */
+
+/* AAYAT AL-KUSRI --------------- */
+
+/* ===================== 10 AZEEM SAHABA ===================== */
+
+.sahaba, .jung{
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+.sahaba h2{
+    color: rgba(255, 0, 119, 0.674);
+    background-color: transparent;
+    font-family: 'Great Vibes';
+    font-size: 3rem;
+    margin-bottom: -0.5rem;
+    padding: 0;
+    text-align: center;
+}
+.sahaba .box{
+    flex: 1 1 15rem;
+}
+.sahaba .bio-det, .jung .bio-det{
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+.bio-det .details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 35rem;
+    padding: 0.75rem;
+    border: 0.1rem solid rgb(206, 206, 206);
+    border-radius: 0.5rem;
+}
+.details p{
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: rgb(0, 132, 255);
+}
+.details p:nth-child(1){
+    color: red;
+    width: 10rem;
+}
+.details p:nth-child(2){
+    text-align: right;
+}
+.bio-det2{
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: column;
+}
+.bio-det2 p{
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--grey);
+} 
+.bio-det2 p:after{
+    content: '◉';
+    content: '☪';
+    left: 0;
+    top: -0.07rem;
+    font-size: 1.5rem;
+    color: rgba(255, 0, 119, 0.674);
+    position: absolute;
+}
+
+/* ABU BAKR RA ---------------------- */
+/* UTHMAN BIN AFFAN RA -------------- */
+/* UMAR BIN KHATTAB RA -------------- */
+/* ALI IBN E TALIB RA --------------- */
+/* TALHA BIN OBAIDULLAH RA ---------- */
+/* ZUBAIR BIN AWWAM RA -------------- */
+/* ABDURRAHMAN BIN AUF RA ----------- */
+/* SAAD BIN ABI WAQAS RA ------------ */
+/* SAAD BIN ABI WAQAS RA ------------ */
+
+/* ====================== OTHER SAHABA ====================== */
+
+#sahaba2 .box{
+    flex: 1 1 20rem;
+}
+
+/* ========================== BATTLE ========================== */
+
+#battles{
+    padding-bottom: 2rem;
+}
+.jung .details{
+    gap: 2rem;
+}
+.jung h2{
+    color: rgba(255, 0, 119, 0.674);
+    background-color: transparent;
+    font-family: 'Great Vibes';
+    font-size: 3rem;
+    margin-bottom: -0.5rem;
+    padding: 0;
+    text-align: center;
+}
+.jung .box{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* ========================= COPYRIGHT ======================== */
+
+#copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2.5rem;
+    background-color: var(--bg);
+    color: var(--white);
+    gap: 1.5rem;
+    /* margin-top: 1rem; */
+}
+.copyright p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+.copyright span{
+    font-weight: 600;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.icons i{
+    padding: 0.6rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    z-index: 4;
+    color: var(--white);
+}
+.icons a i{
+    color: var(--white);
+}
+.fb{
+    background-color: #4267B2;
+}
+.ig{
+    background-color: #fd0675;
+}
+.in{
+    background-color: #0073B1;
+}
+.tw{
+    background-color: #1DA1F2;
+}
+
+/* ========================== SLIDER ========================== */
+
+.slider{
+    display: flex;
+    display: none;
+    /* width: 100%; */
+    flex-direction: column;
+    gap: 1rem;
+}
+.slider .img-con{
+    position: relative;
+    width: 100%;
+    height: 20rem;
+    background-image: url("Slider/slider\ image\ \(3\).jpg");
+    background-size: cover;
+    border-radius: 1rem;
+}
+.img-con::before{
+    content: "+";
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    color: wheat;
+    font-size: 2rem;
+}
+.prev, .next{
+    position: absolute;
+    background-color: var(--white);
+    /* padding: 1rem; */
+    border-radius: 5rem;
+    color: var(--black);
+    bottom: 2rem;
+    font-size: 2rem;
+}
+.next{
+    right: 35%;
+}
+.prev i, .next i{
+    width: 2rem;
+    height: 1rem;
+}
+.prev{
+    left: 35%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================================ */
+/* ======================= MEDIA QUIRIES ====================== */
+/* ============================================================ */
+
+/* --- SCREEN SIZE 1024 px --- */
+
+@media screen and ( max-width: 1024px ){
+    nav{
+        padding: 1.5rem 5rem;
+    }
+    section{
+        padding: 1rem 5rem;
+    }
+    .pillars, .sahaba, .jung{
+        padding: 3rem 5rem;
+    }
+    #sahaba2 .box, #battles .box, #surah .box{
+        flex: 1 1 15rem;
+    }
+}
+
+/* --- SCREEN SIZE 768 px --- */
+
+@media screen and ( max-width: 768px ) {
+    nav{
+        position: relative;
+        padding: 1.5rem 2rem;
+    }
+    nav .nav-list{
+        position: absolute;
+        top: 6.7rem;
+        right: -40rem;
+        background-color: rgba(37, 37, 37, 0.75);
+        background-color: rgba(37, 37, 37, 0.9);
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0;
+        height: 50vh;
+        justify-content: start;
+        transition: 0.25s;
+        gap: 0;
+        z-index: 99;
+        backdrop-filter: blur(0.5rem);
+        width: 50%;
+        /* border-bottom-left-radius: 1rem; */
+    }
+     nav .nav-list.active{
+        right: 0;
+    }
+    nav .nav-list a{
+        border-bottom: 0.1rem solid var(--white);
+        padding: 1.25rem 15rem 1.25rem 4rem;
+    }
+    nav #logo{
+        position: relative;
+    }
+    nav #logo::after{
+        position: absolute;
+        content: "the way of life";
+        text-transform: uppercase;
+        top: 2.8rem;
+        left: 3.75rem;
+        font-size: 0.5rem;
+        font-weight: normal;
+        width: 5rem;
+    }
+   
+    /* HAMBURGER */
+    #hamburger{
+        display: flex;
+    }
+    .section .box{
+        font-size: 1.5rem;
+        flex: 1 1 10rem;
+    }
+    .container{
+        padding: 2rem;
+    }
+    .sahaba{
+        padding: 2rem;
+    }
+    .jung{
+        padding: 2rem;
+    }
+    .bio-det .details{
+        flex: 1 1 30rem;
+    }
+    #pillars .box{
+        flex: 1 1 12rem;
+    }
+    #surah .box{
+        flex: 1 1 10rem;
+    }
+    #sahaba .box{
+        flex: 1 1 10rem;
+    }
+    #sahaba2 .box{
+        flex: 1 1 10rem;
+    }
+    #battles .box{
+        flex: 1 1 10rem;
+    }
+}
+
+/* --- SCREEN SIZE 432 px --- */
+
+@media screen and ( max-width: 432px ){
+    nav{
+        /* padding: 1.5rem 2rem; */
+    }
+    .surah{
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem;
+        gap: 0;
+    }
+    .surah h2{
+        width: 97%;
+    }
+    .surah img{
+        width: 110%;
+    }
+    .container{
+        padding: 1.5rem;
+        text-align: justify;
+        padding: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .container .box{
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
+    #pillars .box{
+        flex: 1 1 9rem;
+    }
+    #surah .box{
+        flex: 1 1 5rem;
+    }
+    #sahaba .box{
+        flex: 1 1 7rem;
+    }
+    #battles .box{
+        flex: 1 1 7rem;
+    }
+    .sahaba{
+        padding: 2rem;
+        gap: 1rem;
+    }
+}
