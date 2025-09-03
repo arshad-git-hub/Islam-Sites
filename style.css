@@ -88,9 +88,10 @@ nav a i{
     cursor: pointer;
     display: none;
 }
-.sss img{
+.ss{
     width: 50%;
-    margin:2rem;
+    height: 50%;
+    margin: 2rem;
 }
 
 /* ---------- SECTION ---------- */
