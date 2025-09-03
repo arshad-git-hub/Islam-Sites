@@ -54,6 +54,8 @@ nav{
     font-family: 'lexend','Poppins','Trebuchet MS','sans-serif';
     background-color: var(--bg);
     color: var(--white);
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
 }
 nav .nav-list{
     position: relative;
@@ -111,6 +113,8 @@ section:nth-child(5){
 }
 .container .box{
     color: var(--white);
+    /* font-weight: bold; */
+    /* color: rgb(52, 52, 52); */
     border-radius: 0.5rem;
     cursor: pointer;
     display: flex;
@@ -143,18 +147,23 @@ section:nth-child(5){
 } */
 .container .box:nth-child(1), .container .box:nth-child(6), .container .box:nth-child(11), .container .box:nth-child(16){
     background-color: #c77dff;
+    /* background-color: #edede9; */
 }
 .container .box:nth-child(2), .container .box:nth-child(7), .container .box:nth-child(12), .container .box:nth-child(17){
     background-color: #62b6cb;
+    /* background-color: #cad9cb; */
 }
 .container .box:nth-child(3), .container .box:nth-child(8), .container .box:nth-child(13), .container .box:nth-child(18){
     background-color: #dda15e;
+    /* background-color: #f7ede2; */
 }
 .container .box:nth-child(4), .container .box:nth-child(9), .container .box:nth-child(14){
     background-color: rgb(90, 188, 120);
+    /* background-color: #ffe5ec; */
 }
 .container .box:nth-child(5), .container .box:nth-child(10), .container .box:nth-child(15){
     background-color: #ff89a6;
+    /* background-color: #e8e8e4; */
 }
 #surah .box{
     flex: 1 1 25rem;
@@ -205,10 +214,10 @@ section:nth-child(5){
     gap: 0;
 }
 .surah h2{
-    width: 47%;
+    width: 28%;
 }
 .surah img{
-    width: 50%;
+    width: 30%;
 }
 
 /* SURAH AL-FATIHA -------------- */
@@ -335,6 +344,8 @@ section:nth-child(5){
     color: var(--white);
     gap: 1.5rem;
     /* margin-top: 1rem; */
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
 }
 .copyright p{
     font-size: 1.2rem;
@@ -465,18 +476,22 @@ section:nth-child(5){
     }
 }
 
-/* --- SCREEN SIZE 768 px --- */
+/* --- SCREEN SIZE 800 px --- */
 
-@media screen and ( max-width: 768px ) {
+@media screen and ( max-width: 800px ) {
     nav{
         position: relative;
-        padding: 1.5rem 2rem;
+        padding: 1.5rem 1.35rem 1.5rem 1.5rem;
+        background-image: url(/images/wall1.jpg);
+        background-size: cover;
+        background-position: top 32% right 50%;
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
     }
     nav .nav-list{
         position: absolute;
         top: 6.7rem;
         right: -40rem;
-        background-color: rgba(37, 37, 37, 0.75);
         background-color: rgba(37, 37, 37, 0.9);
         flex-direction: column;
         gap: 1.5rem;
@@ -490,12 +505,19 @@ section:nth-child(5){
         width: 50%;
         /* border-bottom-left-radius: 1rem; */
     }
-     nav .nav-list.active{
+    nav .nav-list.active{
         right: 0;
     }
     nav .nav-list a{
         border-bottom: 0.1rem solid var(--white);
-        padding: 1.25rem 15rem 1.25rem 4rem;
+        /* padding: 1.25rem 15rem 1.25rem 4rem; */
+        /* width: auto; */
+        /* width: auto; */
+        height: 5rem;
+        display: flex;
+        justify-content: start;
+        padding-left: 3rem;
+        align-items: center;
     }
     nav #logo{
         position: relative;
@@ -504,11 +526,19 @@ section:nth-child(5){
         position: absolute;
         content: "the way of life";
         text-transform: uppercase;
-        top: 2.8rem;
+        top: 2.75rem;
         left: 3.75rem;
-        font-size: 0.5rem;
+        font-size: 0.6rem;
         font-weight: normal;
-        width: 5rem;
+        width: 6rem;
+    }
+    .pillars h1, .surah h1{
+        background-color: rgb(236, 236, 236);
+        font-size: 1.7rem;
+        color: var(--black);
+        /* background-image: url(/images/pexels-pixabay-531880.jpg);
+        background-size: cover;
+        background-position: top 55% right 50%; */
     }
    
     /* HAMBURGER */
@@ -520,39 +550,59 @@ section:nth-child(5){
         flex: 1 1 10rem;
     }
     .container{
-        padding: 2rem;
+        padding: 1rem 1.5rem;
+    }
+    .container .box{
+        font-size: 1.4rem;
     }
     .sahaba{
-        padding: 2rem;
+        padding: 1.5rem;
     }
     .jung{
-        padding: 2rem;
+        padding: 1.5rem;
     }
     .bio-det .details{
         flex: 1 1 30rem;
     }
     #pillars .box{
-        flex: 1 1 12rem;
+        flex: 1 1 11rem;
+    }
+    .pillars{
+        padding: 1.5rem;
+        gap: 0.35rem;
     }
     #surah .box{
-        flex: 1 1 10rem;
+        flex: 1 1 12rem;
+    }
+    .surah h2{
+        width: 100%;
+    }
+    .surah img{
+        width: 105%;
+        margin-bottom: -2rem;
     }
     #sahaba .box{
-        flex: 1 1 10rem;
+        flex: 1 1 12rem;
     }
     #sahaba2 .box{
-        flex: 1 1 10rem;
+        flex: 1 1 12rem;
     }
     #battles .box{
-        flex: 1 1 10rem;
+        flex: 1 1 12rem;
+    }
+    #copyright{
+        border-top-left-radius: 7.5rem;
+        border-top-right-radius: 7.5rem;
     }
 }
 
-/* --- SCREEN SIZE 432 px --- */
+/* --- SCREEN SIZE 460 px --- */
 
-@media screen and ( max-width: 432px ){
+@media screen and ( max-width: 460px ){
     nav{
-        /* padding: 1.5rem 2rem; */
+        padding: 1.5rem 1.25rem 1.5rem 1.5rem;
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
     }
     .surah{
         flex-direction: column;
@@ -561,35 +611,43 @@ section:nth-child(5){
         gap: 0;
     }
     .surah h2{
-        width: 97%;
+        width: 100%;
     }
     .surah img{
         width: 110%;
     }
     .container{
-        padding: 1.5rem;
         text-align: justify;
-        padding: 1.5rem;
-        padding-bottom: 0.5rem;
+        padding: 0.75rem 1.5rem;
     }
     .container .box{
-        padding: 1rem;
-        font-size: 1.2rem;
+        padding: 1.4rem;
+        font-size: 1.4rem;
     }
     #pillars .box{
-        flex: 1 1 9rem;
+        flex: 1 1 7.5rem;
+    }
+    .pillars{
+        padding: 1.5rem;
+    }
+    .pillars h1{
+        font-size: 1.65rem;
     }
     #surah .box{
-        flex: 1 1 5rem;
+        flex: 1 1 10rem;
     }
     #sahaba .box{
-        flex: 1 1 7rem;
-    }
-    #battles .box{
-        flex: 1 1 7rem;
+        flex: 1 1 10rem;
     }
     .sahaba{
-        padding: 2rem;
+        /* padding: 2rem; */
         gap: 1rem;
+    }
+    #battles .box{
+        flex: 1 1 10rem;
+    }
+    #copyright{
+        border-top-left-radius: 5rem;
+        border-top-right-radius: 5rem;
     }
 }
