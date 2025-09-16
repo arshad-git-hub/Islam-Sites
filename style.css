@@ -508,16 +508,12 @@ section:nth-child(5){
         z-index: 99;
         backdrop-filter: blur(0.5rem);
         width: 50%;
-        /* border-bottom-left-radius: 1rem; */
     }
     nav .nav-list.active{
         right: 0;
     }
     nav .nav-list a{
         border-bottom: 0.1rem solid var(--white);
-        /* padding: 1.25rem 15rem 1.25rem 4rem; */
-        /* width: auto; */
-        /* width: auto; */
         height: 5rem;
         display: flex;
         justify-content: start;
@@ -541,9 +537,6 @@ section:nth-child(5){
         background-color: rgb(236, 236, 236);
         font-size: 1.7rem;
         color: var(--black);
-        /* background-image: url(/images/pexels-pixabay-531880.jpg);
-        background-size: cover;
-        background-position: top 55% right 50%; */
     }
    
     /* HAMBURGER */
@@ -579,12 +572,16 @@ section:nth-child(5){
     #surah .box{
         flex: 1 1 12rem;
     }
+    .surah{
+        padding-bottom: 0rem;
+        padding: 3rem 0rem 0rem 0rem;
+    }
     .surah h2{
-        width: 100%;
+        width: auto;
+        padding: 1rem 3rem;
     }
     .surah img{
-        width: 105%;
-        margin-bottom: -2rem;
+        width: 100%;
     }
     #sahaba .box{
         flex: 1 1 12rem;
@@ -613,13 +610,20 @@ section:nth-child(5){
         flex-direction: column;
         align-items: center;
         padding: 3rem;
+        padding-bottom: 1;
         gap: 0;
     }
     .surah h2{
-        width: 100%;
+        width: 50%;
+    }
+    .rahman h2{
+        width: 55%;
+    }
+    .kahf, .mulk, .rahman{
+        padding-bottom: 1rem;
     }
     .surah img{
-        width: 110%;
+        width: 115%;
     }
     .container{
         text-align: justify;
